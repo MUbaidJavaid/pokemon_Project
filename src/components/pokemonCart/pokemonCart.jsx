@@ -1,4 +1,5 @@
 // PokemonCard.jsx
+import graphImg from '../../assets/graph_1.png';
 export const PokemonCard = ({ pokemon }) => {
     const imageUrl = pokemon.sprites?.other?.dream_world?.front_default || 
                     pokemon.sprites?.front_default || 
@@ -12,9 +13,10 @@ export const PokemonCard = ({ pokemon }) => {
       <div className="bg-white rounded-md shadow-md hover:shadow-[#afaaa2] hover:shadow-2xl shadow-[#b4b2b2] py-4 px-2 group transition-all duration-300 ease-in-out">
         <div className="flex flex-col items-center h-20 md:h-32 w-full relative">
           <img
-            src="/dist/graph_2.png"
+            src={graphImg}
             alt="pokemon background"
             className="object-cover absolute inset-0 mt-4 w-full h-full transform transition-transform duration-200 ease-in group-hover:opacity-50"
+
           />
           <figure className="z-10 mt-3 relative h-full flex items-center">
             <img
