@@ -9,7 +9,7 @@ export const PokemonData = () => {
   const fetchPokemonData = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=140");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=600");
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       
       const data = await response.json();
