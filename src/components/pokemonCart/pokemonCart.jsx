@@ -41,10 +41,10 @@ export const PokemonCard = ({ pokemon }) => {
 
         <div className="flex flex-wrap justify-center gap-2 mt-4 mb-2">
           <p className="text-black text-xs font-bold text-center capitalize">
-            Height: <span className="font-normal">{pokemon.height / 10}m</span>
+            Height: <span className="font-normal">{pokemon.height / 20}m</span>
           </p>
           <p className="text-black text-xs font-bold text-center capitalize">
-            Weight: <span className="font-normal">{pokemon.weight / 10}kg</span>
+            Weight: <span className="font-normal">{pokemon.weight / 20}kg</span>
           </p>
           <p className="text-black text-xs font-bold text-center capitalize">
             Speed: <span className="font-normal">{pokemon.stats?.[5]?.base_stat || 'N/A'}</span>
