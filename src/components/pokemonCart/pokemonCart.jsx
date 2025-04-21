@@ -30,7 +30,7 @@ export const PokemonCard = ({ pokemon }) => {
           </figure>
         </div>
         
-        <h1 className="text-xl font-bold text-center font-poppin capitalize mt-5">
+        <h1 className="md:text-xl text-md font-bold text-center font-poppin capitalize mt-5">
           {pokemon.name}
         </h1>
         
