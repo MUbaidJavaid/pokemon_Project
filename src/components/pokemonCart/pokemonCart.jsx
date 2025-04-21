@@ -51,7 +51,7 @@ export const PokemonCard = ({ pokemon }) => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mt-4 mb-2">
+        <div className="md:flex md:flex-wrap md:justify-center hidden  gap-2 mt-4 mb-2">
           <p className="text-black text-xs font-bold text-center capitalize">
            Experience: <span className="font-normal">{pokemon.base_experience }</span>
           </p>
