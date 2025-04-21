@@ -52,7 +52,7 @@ console.log("Pokemon data:", pokemonData);
   if (loading && pokemonData.length === 0) {
     return (
       <div className="text-black flex flex-col items-center p-4 mx-auto my-auto">
-        <p className="text-4xl my-6 font-bold text-center font-poppin_bold capitalize">
+        <p className="md:text-4xl text-2xl my-6 font-bold text-center  font-poppin_bold capitalize">
           Loading Pokémon...
         </p>
       </div>
@@ -62,7 +62,7 @@ console.log("Pokemon data:", pokemonData);
   if (error) {
     return (
       <div className="text-red-800 flex flex-col items-center p-4 mx-auto mt-10 mb-10">
-        <p className="text-4xl my-6 font-bold text-center font-poppin_bold capitalize">
+        <p className="md:text-4xl text-2xl my-6 font-bold text-center font-poppin_bold capitalize">
           Error: {error}
         </p>
         <button 
@@ -78,7 +78,7 @@ console.log("Pokemon data:", pokemonData);
   return (
     <div className="p-4 mx-auto max-w-7xl">
       <div className="text-black flex flex-col items-center">
-        <h1 className="text-4xl my-6 font-bold text-center font-poppin_bold capitalize">
+        <h1 className="md:text-4xl text-2xl my-6 font-bold text-center font-poppin_bold capitalize">
           Let's Catch Pokémon
         </h1>
         <input
